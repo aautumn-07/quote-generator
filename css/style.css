@@ -1,0 +1,505 @@
+/* ==============================
+   Google Font
+============================== */
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body{
+
+
+    font-family:"Poppins",sans-serif;
+
+
+    min-height:100vh;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    padding:20px;
+
+
+    background:
+    linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2
+    );
+
+
+    transition:.4s;
+
+
+}
+
+
+
+/* ==============================
+   Container
+============================== */
+
+
+.container{
+
+
+    width:100%;
+
+
+    max-width:750px;
+
+
+}
+
+
+
+/* ==============================
+   Card
+============================== */
+
+
+.quote-card{
+
+
+    background:white;
+
+
+    padding:50px 40px;
+
+
+    border-radius:25px;
+
+
+    text-align:center;
+
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.25);
+
+
+    transition:.4s;
+
+
+}
+
+
+
+
+/* ==============================
+   Heading
+============================== */
+
+
+h1{
+
+
+    color:#5d4ae8;
+
+
+    font-size:2.5rem;
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+.subtitle{
+
+
+    color:#777;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+/* ==============================
+   Category
+============================== */
+
+
+#category{
+
+
+    display:inline-block;
+
+
+    padding:8px 18px;
+
+
+    border-radius:30px;
+
+
+    background:#eee;
+
+
+    color:#5d4ae8;
+
+
+    font-weight:600;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+/* ==============================
+   Quote
+============================== */
+
+
+#quote{
+
+
+    font-size:1.6rem;
+
+
+    line-height:1.8;
+
+
+    color:#333;
+
+
+    min-height:120px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.fade{
+
+
+    opacity:0;
+
+
+}
+
+
+
+
+/* ==============================
+   Author
+============================== */
+
+
+#author{
+
+
+    margin-top:25px;
+
+
+    color:#777;
+
+
+    font-weight:600;
+
+
+    font-size:1.1rem;
+
+
+}
+
+
+
+/* ==============================
+   Buttons
+============================== */
+
+
+.buttons{
+
+
+    margin-top:40px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    flex-wrap:wrap;
+
+
+    gap:15px;
+
+
+}
+
+
+
+
+button{
+
+
+    border:none;
+
+
+    padding:14px 22px;
+
+
+    border-radius:50px;
+
+
+    cursor:pointer;
+
+
+    font-size:.95rem;
+
+
+    font-weight:600;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+button:hover{
+
+
+    transform:translateY(-4px);
+
+
+    box-shadow:
+
+    0 10px 20px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+#newQuoteBtn{
+
+
+    background:#5d4ae8;
+
+
+    color:white;
+
+
+}
+
+
+
+
+#copyBtn{
+
+
+    background:#ececec;
+
+
+}
+
+
+
+
+#shareBtn{
+
+
+    background:#00b894;
+
+
+    color:white;
+
+
+}
+
+
+
+#darkBtn{
+
+
+    background:#222;
+
+
+    color:white;
+
+
+}
+
+
+
+
+button:active{
+
+
+    transform:scale(.95);
+
+
+}
+
+
+
+
+/* ==============================
+   Dark Mode
+============================== */
+
+
+body.dark{
+
+
+    background:#111;
+
+
+}
+
+
+
+
+.dark .quote-card{
+
+
+    background:#1e1e1e;
+
+
+}
+
+
+
+
+.dark h1{
+
+
+    color:#8c7cff;
+
+
+}
+
+
+
+
+.dark .subtitle{
+
+
+    color:#bbb;
+
+
+}
+
+
+
+.dark #quote{
+
+
+    color:white;
+
+
+}
+
+
+
+.dark #author{
+
+
+    color:#bbb;
+
+
+}
+
+
+
+.dark #category{
+
+
+    background:#333;
+
+
+}
+
+
+
+/* ==============================
+   Mobile Responsive
+============================== */
+
+
+@media(max-width:600px){
+
+
+.quote-card{
+
+
+    padding:35px 20px;
+
+
+}
+
+
+
+h1{
+
+
+    font-size:2rem;
+
+
+}
+
+
+
+#quote{
+
+
+    font-size:1.25rem;
+
+
+}
+
+
+
+button{
+
+
+    width:100%;
+
+
+}
+
+
+
+}
