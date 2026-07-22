@@ -51,26 +51,3 @@ quote-generator/
 └── .gitignore
 ```
 
----
-
-## 🚀 Getting Started
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/aautumn-07/quote-generator.git
-```
-
-2. Open the project folder.
-
-3. Open `index.html` in your web browser.
-
-No additional installation is required.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-
