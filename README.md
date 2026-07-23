@@ -2,13 +2,11 @@
 
 A modern and responsive quote generator built using **HTML**, **CSS**, and **JavaScript**. The application displays random inspirational quotes, allows users to copy or share them, and includes a dark mode for a better user experience.
 
----
 
 ## 📸 Screenshot
 
 ![Quote Generator](assets/screenshots/quote-generator.png)
 
----
 
 ## ✨ Features
 
@@ -19,7 +17,6 @@ A modern and responsive quote generator built using **HTML**, **CSS**, and **Jav
 * 💾 Remembers user preferences
 * 📱 Responsive design for desktop and mobile
 
----
 
 ## 🛠️ Technologies Used
 
@@ -27,7 +24,6 @@ A modern and responsive quote generator built using **HTML**, **CSS**, and **Jav
 * CSS3
 * JavaScript 
 
----
 
 ## 📂 Project Structure
 
