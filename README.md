@@ -15,14 +15,13 @@ A modern and responsive quote generator built using **HTML**, **CSS**, and **Jav
 
 ## 🛠️ Technologies Used
 
-* HTML5
-* CSS3
+* HTML
+* CSS
 * JavaScript 
 
 
 ## 📂 Project Structure
 
-```text
 quote-generator/
 │
 ├── assets/
@@ -40,9 +39,4 @@ quote-generator/
 ├── README.md
 ├── LICENSE
 └── .gitignore
-<<<<<<< HEAD
-```
-=======
-```
 
->>>>>>> 5773946ae7b60a19fb87b69ba4ef0bf4ee6f5698
