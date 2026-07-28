@@ -49,9 +49,3 @@ quote-generator/
 ├── README.md
 ├── LICENSE
 └── .gitignore
-<<<<<<< HEAD
-```
-=======
-```
-
->>>>>>> 5773946ae7b60a19fb87b69ba4ef0bf4ee6f5698

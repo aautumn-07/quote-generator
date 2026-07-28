@@ -1,505 +1,473 @@
-/* ==============================
-   Google Font
-============================== */
+/* ==========================================
+   QuoteVerse
+   Modern CSS
+   Author: Rokka
+========================================== */
 
+/* ==========================================
+   Google Font & Reset
+========================================== */
 
 *{
-
     margin:0;
-
     padding:0;
-
     box-sizing:border-box;
-
 }
 
-
+html{
+    scroll-behavior:smooth;
+}
 
 body{
 
-
     font-family:"Poppins",sans-serif;
-
 
     min-height:100vh;
 
-
     display:flex;
-
 
     justify-content:center;
 
-
     align-items:center;
 
-
-    padding:20px;
-
+    padding:25px;
 
     background:
     linear-gradient(
-    135deg,
-    #667eea,
-    #764ba2
+        135deg,
+        #4f46e5,
+        #6d28d9,
+        #9333ea
     );
 
-
-    transition:.4s;
-
+    transition:.4s ease;
 
 }
 
-
-
-/* ==============================
+/* ==========================================
    Container
-============================== */
-
+========================================== */
 
 .container{
 
-
     width:100%;
 
-
-    max-width:750px;
-
+    max-width:850px;
 
 }
 
-
-
-/* ==============================
-   Card
-============================== */
-
+/* ==========================================
+   Quote Card
+========================================== */
 
 .quote-card{
 
+    background:rgba(255,255,255,.96);
 
-    background:white;
+    backdrop-filter:blur(15px);
 
+    border-radius:24px;
 
-    padding:50px 40px;
-
-
-    border-radius:25px;
-
+    padding:55px 45px;
 
     text-align:center;
 
+    border:1px solid rgba(255,255,255,.3);
 
     box-shadow:
+    0 20px 45px rgba(0,0,0,.22);
 
-    0 20px 50px rgba(0,0,0,.25);
-
-
-    transition:.4s;
-
+    transition:
+    transform .35s,
+    box-shadow .35s;
 
 }
 
+.quote-card:hover{
 
+    transform:translateY(-6px);
 
+    box-shadow:
+    0 30px 60px rgba(0,0,0,.28);
 
-/* ==============================
+}
+
+/* ==========================================
    Heading
-============================== */
-
+========================================== */
 
 h1{
 
+    font-size:2.8rem;
 
     color:#5d4ae8;
 
+    margin-bottom:12px;
 
-    font-size:2.5rem;
-
-
-    margin-bottom:10px;
-
+    font-weight:700;
 
 }
-
-
 
 .subtitle{
 
+    color:#666;
 
-    color:#777;
+    font-size:1rem;
 
-
-    margin-bottom:30px;
-
+    margin-bottom:35px;
 
 }
 
-
-
-/* ==============================
+/* ==========================================
    Category
-============================== */
-
+========================================== */
 
 #category{
 
-
-    display:inline-block;
-
-
-    padding:8px 18px;
-
-
-    border-radius:30px;
-
-
-    background:#eee;
-
-
-    color:#5d4ae8;
-
-
-    font-weight:600;
-
-
-    margin-bottom:30px;
-
-
-}
-
-
-
-/* ==============================
-   Quote
-============================== */
-
-
-#quote{
-
-
-    font-size:1.6rem;
-
-
-    line-height:1.8;
-
-
-    color:#333;
-
-
-    min-height:120px;
-
-
-    display:flex;
-
+    display:inline-flex;
 
     justify-content:center;
-
 
     align-items:center;
 
+    min-width:150px;
 
-    transition:.3s;
+    padding:10px 22px;
 
+    border-radius:40px;
 
-}
+    background:#ece9ff;
 
-
-
-.fade{
-
-
-    opacity:0;
-
-
-}
-
-
-
-
-/* ==============================
-   Author
-============================== */
-
-
-#author{
-
-
-    margin-top:25px;
-
-
-    color:#777;
-
+    color:#5d4ae8;
 
     font-weight:600;
 
+    letter-spacing:.5px;
 
-    font-size:1.1rem;
-
-
-}
-
-
-
-/* ==============================
-   Buttons
-============================== */
-
-
-.buttons{
-
-
-    margin-top:40px;
-
-
-    display:flex;
-
-
-    justify-content:center;
-
-
-    flex-wrap:wrap;
-
-
-    gap:15px;
-
+    margin-bottom:35px;
 
 }
 
-
-
-
-button{
-
-
-    border:none;
-
-
-    padding:14px 22px;
-
-
-    border-radius:50px;
-
-
-    cursor:pointer;
-
-
-    font-size:.95rem;
-
-
-    font-weight:600;
-
-
-    transition:.3s;
-
-
-}
-
-
-
-
-button:hover{
-
-
-    transform:translateY(-4px);
-
-
-    box-shadow:
-
-    0 10px 20px rgba(0,0,0,.15);
-
-
-}
-
-
-
-
-#newQuoteBtn{
-
-
-    background:#5d4ae8;
-
-
-    color:white;
-
-
-}
-
-
-
-
-#copyBtn{
-
-
-    background:#ececec;
-
-
-}
-
-
-
-
-#shareBtn{
-
-
-    background:#00b894;
-
-
-    color:white;
-
-
-}
-
-
-
-#darkBtn{
-
-
-    background:#222;
-
-
-    color:white;
-
-
-}
-
-
-
-
-button:active{
-
-
-    transform:scale(.95);
-
-
-}
-
-
-
-
-/* ==============================
-   Dark Mode
-============================== */
-
-
-body.dark{
-
-
-    background:#111;
-
-
-}
-
-
-
-
-.dark .quote-card{
-
-
-    background:#1e1e1e;
-
-
-}
-
-
-
-
-.dark h1{
-
-
-    color:#8c7cff;
-
-
-}
-
-
-
-
-.dark .subtitle{
-
-
-    color:#bbb;
-
-
-}
-
-
-
-.dark #quote{
-
-
-    color:white;
-
-
-}
-
-
-
-.dark #author{
-
-
-    color:#bbb;
-
-
-}
-
-
-
-.dark #category{
-
-
-    background:#333;
-
-
-}
-
-
-
-/* ==============================
-   Mobile Responsive
-============================== */
-
-
-@media(max-width:600px){
-
-
-.quote-card{
-
-
-    padding:35px 20px;
-
-
-}
-
-
-
-h1{
-
-
-    font-size:2rem;
-
-
-}
-
-
+/* ==========================================
+   Quote
+========================================== */
 
 #quote{
 
+    font-size:1.7rem;
 
-    font-size:1.25rem;
+    font-weight:500;
 
+    color:#2d3436;
+
+    line-height:1.8;
+
+    min-height:170px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:
+    opacity .35s,
+    transform .35s;
 
 }
 
+.fade{
 
+    opacity:0;
+
+    transform:translateY(15px);
+
+}
+
+/* ==========================================
+   Author
+========================================== */
+
+#author{
+
+    margin-top:30px;
+
+    font-size:1.15rem;
+
+    color:#666;
+
+    font-style:italic;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+
+.buttons{
+
+    margin-top:45px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+}
 
 button{
 
+    border:none;
 
-    width:100%;
+    outline:none;
 
+    padding:15px;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-size:.96rem;
+
+    font-weight:600;
+
+    transition:
+    transform .25s,
+    box-shadow .25s,
+    opacity .25s;
 
 }
 
+button:hover{
 
+    transform:
+    translateY(-4px)
+    scale(1.03);
+
+    box-shadow:
+    0 12px 22px rgba(0,0,0,.18);
+
+}
+
+button:active{
+
+    transform:scale(.96);
+
+}
+
+/* Disabled */
+
+button:disabled{
+
+    opacity:.45;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+    box-shadow:none;
+
+}
+
+button:disabled:hover{
+
+    transform:none;
+
+    box-shadow:none;
+
+}
+
+/* ==========================================
+   Individual Buttons
+========================================== */
+
+#prevBtn{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+#newQuoteBtn{
+
+    background:#5d4ae8;
+
+    color:white;
+
+}
+
+#nextBtn{
+
+    background:#f59e0b;
+
+    color:white;
+
+}
+
+#copyBtn{
+
+    background:#ececec;
+
+    color:#333;
+
+}
+
+#shareBtn{
+
+    background:#10b981;
+
+    color:white;
+
+}
+
+#darkBtn{
+
+    background:#1f2937;
+
+    color:white;
+
+}
+
+/* ==========================================
+   Dark Mode
+========================================== */
+
+body.dark{
+
+    background:
+    linear-gradient(
+        135deg,
+        #111827,
+        #1f2937,
+        #111827
+    );
+
+}
+
+.dark .quote-card{
+
+    background:#1f2937;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.dark h1{
+
+    color:#a78bfa;
+
+}
+
+.dark .subtitle{
+
+    color:#d1d5db;
+
+}
+
+.dark #quote{
+
+    color:#f9fafb;
+
+}
+
+.dark #author{
+
+    color:#d1d5db;
+
+}
+
+.dark #category{
+
+    background:#374151;
+
+    color:white;
+
+}
+
+.dark #copyBtn{
+
+    background:#374151;
+
+    color:white;
+
+}
+
+/* ==========================================
+   Responsive Design
+========================================== */
+
+@media(max-width:768px){
+
+    .quote-card{
+
+        padding:40px 28px;
+
+    }
+
+    h1{
+
+        font-size:2.2rem;
+
+    }
+
+    #quote{
+
+        font-size:1.35rem;
+
+        min-height:180px;
+
+    }
+
+    .buttons{
+
+        grid-template-columns:1fr;
+
+    }
+
+    button{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    body{
+
+        padding:15px;
+
+    }
+
+    h1{
+
+        font-size:2rem;
+
+    }
+
+    .subtitle{
+
+        font-size:.95rem;
+
+    }
+
+    #quote{
+
+        font-size:1.2rem;
+
+        line-height:1.7;
+
+    }
+
+    #author{
+
+        font-size:1rem;
+
+    }
 
 }
