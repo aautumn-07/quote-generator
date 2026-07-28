@@ -20,23 +20,3 @@ A modern and responsive quote generator built using **HTML**, **CSS**, and **Jav
 * JavaScript 
 
 
-## 📂 Project Structure
-
-quote-generator/
-│
-├── assets/
-│   └── screenshots/
-│       └── quote-generator.png
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   ├── quotes.js
-│   └── script.js
-│
-├── index.html
-├── README.md
-├── LICENSE
-└── .gitignore
-
