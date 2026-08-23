@@ -1,5 +1,4 @@
 
-
 # ✨ QuoteVerse
 
 A modern and responsive quote generator built using **HTML**, **CSS**, and **JavaScript**. The application displays random inspirational quotes, allows users to copy or share them, and includes a dark mode for a better user experience.
